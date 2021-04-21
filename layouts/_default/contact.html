@@ -1,0 +1,19 @@
+{{- define "main" }}
+
+<div class="profile">
+    {{- with .Site.Params.contact}}
+    <div class="profile_inner">
+        {{- if .imageUrl -}}
+        <img src="{{ .imageUrl }}" alt="{{ .imageTitle | default "profile image" }}"
+            height="{{ .imageHeight | default 150 }}" width="{{ .imageWidth | default 150 }}" />
+        {{- end }}
+        <h1>{{ .name | markdownify }}</h1>
+        <p><h5>{{ .bachelor | markdownify }} - {{ .location | markdownify }}</h5></p>
+    </br>
+        <span>{{ .message | markdownify }}</span>
+        {{- partial "social_icons.html" $.Site.Params.socialIcons -}}
+    </div>
+    {{- end}}
+</div>
+
+{{- end }}{{/* end main */}}

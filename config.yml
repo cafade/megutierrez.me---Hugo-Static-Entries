@@ -1,0 +1,57 @@
+#baseURL: http://localhost/notes/
+baseURL: https://megutierrez.site/notes/
+RelativeURLs: true
+CanonifyURLs: true
+languageCode: en-us
+title: Notes and Reminders
+copyright: Martin E. Gutierrez
+theme: "PaperMod"
+markup:
+    goldmark:
+        renderer:
+        hardWraps: true
+
+menu:
+    main:
+        - name: About me
+          url: https://megutierrez.site
+          weight: 1
+        - name: Archives
+          url: archives
+          weight: 2
+        - name: IRC Server
+          url: https://learninweb.homelinuxserver.org/irc
+          weight: 3
+        - name: Contact
+          url: contact
+          weight: 4
+
+params:
+    defaultTheme: dark
+    disableThemeToggle: true
+    ShowBreadCrumbs: true
+    hideMeta: true
+
+    homeInfoParams:
+        Title: Notes, reminders, and docs
+        Content: Related to all the stuff I've been working on...
+    
+    contact:
+          name: B.Eng. Martin E. Gutierrez
+          bachelor: Systems Engineer
+          message: You can find me in...
+          location: Bogotá, Colombia
+          imageUrl: "/images/contact-pic.svg"
+          imageTitle: contact image
+
+    socialIcons:
+        - name: github
+          url: "https://github.com/cafade"
+        - name: gitlab
+          url: "https://gitlab.com/cafade"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/martin-esteban-gutierrez-gallo/"
+        - name: twitter
+          url: "https://twitter.com/cafade2"
+        - name: email
+          url: "mailto:esteban@megutierrez.site"
