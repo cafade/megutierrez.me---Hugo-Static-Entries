@@ -20,7 +20,7 @@ menu:
           url: archives
           weight: 2
         - name: IRC Server
-          url: https://learninweb.homelinuxserver.org/irc
+          url: https://learninweb.homelinuxserver.org/irc/
           weight: 3
         - name: Contact
           url: contact
